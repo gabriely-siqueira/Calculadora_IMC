@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="O sistema foi desenvolvido por Gabriely de Souza Siqueira e consiste em uma calculadora
+         de Índice de Massa Corporal (IMC)">
+    <title>Avaliação IMC</title>
+</head>
+
+<body>
+    <div class="main-form">
+        <div class="left-form">
+            <h1>Faça sua <br> Avaliação IMC</h1>
+            <img class="left-form-image" src="Healthy lifestyle-bro.svg" alt="">
+        </div>
+        <div class="right-form">
+            <div class="card-form">
+                <h1>Avaliação IMC</h1>
+                <div class="textfield">
+                    <label for="usuario">Nome:</label>
+                    <input type="text" name="usuario" placeholder="nome">
+                </div>
+                <div class="textfield">
+                    <label for="genero">Gênero:</label>
+                    <select id="genero" name="genero" class="textfield">
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                    </select>
+                </div>
+
+                <div class="textfield">
+                    <label for="peso">Peso (Kg):</label>
+                    <input type="text" id="peso" name="peso" placeholder="peso" required>
+                </div>
+                <div class="textfield">
+                    <label for="altura">Altura (cm):</label>
+                    <input type="text" id="altura" name="altura" placeholder="altura" required>
+                </div>
+
+                <button class="btn-calcImc" id="submit" onclick="calculate()">Avaliar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
